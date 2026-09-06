@@ -15,9 +15,11 @@ public class GerenciadorSalas {
     
     public void cadastrarSalas(Sala nova_sala) {
         salas.add(nova_sala);
+        System.out.println("Sala " + nova_sala.getId() + " criada.");
     }
     
     public ArrayList<Sala> getSalas() {
         return salas;
     }
+    
 }

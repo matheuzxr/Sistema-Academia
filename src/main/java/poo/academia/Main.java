@@ -41,6 +41,13 @@ public class Main {
        academia.cadastrarSala(pilates);
        
        academia.exibirSalas();
+       
+       academia.excluirSala(3);
+       
+       academia.exibirSalas();
+       
+       
+       
     }
     
 }

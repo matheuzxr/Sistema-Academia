@@ -24,11 +24,14 @@ public class Academia {
         gerenciador.cadastrarSalas(s);
     }
     
+    public void excluirSala(int id) {
+        gerenciador.excluirSala(id);
+    }
+    
     public void exibirSalas() {
         ArrayList<Sala> salas = gerenciador.getSalas();
         for (Sala s : salas){
             System.out.println("\nID da sala: " + s.getId() + "\nDescricao: " + s.getDescricao() + "\nCapacidade: " + s.getCapacidade());
         }
     }
-
 }

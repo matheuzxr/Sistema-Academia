@@ -18,6 +18,16 @@ public class GerenciadorSalas {
         System.out.println("Sala " + nova_sala.getId() + " criada.");
     }
     
+    public void excluirSala(int id) {
+        for(Sala s : salas) {
+            if(s.getId() == id) {
+                salas.remove(s);
+                break;
+            }
+        }
+        System.out.println("\nSala de ID " + id + " excluida.");
+    }
+    
     public ArrayList<Sala> getSalas() {
         return salas;
     }
